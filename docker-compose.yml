@@ -1,0 +1,16 @@
+version: "3"
+services:
+  jenkins-DataCollect:
+    image: 469288592/jenkins-DataCollect:latest
+    container_name: jenkins-DataCollect
+    restart: always
+    privileged: true
+    environment:
+      - JENKINS_URL=http://172.18.0.1:8080/computer/xc-forward/slave-agent.jnlp
+      - JENKINS_SECRET=fec15f31a39f8a2f98d7a85daf11c41469d819d91fba7f19873feb0eca3f1c87
+      - JENKINS_AGENT_WORKDIR=/data/jenkins_home
+    networks:
+      - xunce
+  
+networks:
+  xunce: 
