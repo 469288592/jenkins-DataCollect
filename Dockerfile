@@ -46,7 +46,6 @@ RUN localedef -v -c -i en_US -f UTF-8 zh_CN.UTF-8 >/dev/null 2>&1 &&\
     which gcc &&\
     gcc --version &&\
     echo "source /opt/rh/devtoolset-7/enable" >> /etc/profile &&\
-    echo "/usr/lib/uvframe" > /etc/ld.so.conf.d/uvframe.conf &&\
     rpmdev-setuptree &&\
     dos2unix /tmp/resource/*sh && \
     cp -r /tmp/resource/agent.jar /usr/bin/agent.jar && \
