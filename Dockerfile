@@ -25,7 +25,8 @@ RUN localedef -v -c -i en_US -f UTF-8 zh_CN.UTF-8 >/dev/null 2>&1 &&\
                  gettext-devel \
                  unixODBC-devel \
                  openssl-devel \
-                 libuv-1.22.0 \
+                 libuv-1.23.2 \
+                 libuv-devel-1.23.2 \
                  libzmq-4.2.1 \
                  spdlog-1.1.0 \
                  protobuf-3.6.1 \
